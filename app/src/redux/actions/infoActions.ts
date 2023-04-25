@@ -15,5 +15,6 @@ export const setModalInfo = (info: any) => ({
 });
 
 export const getModalInfo = () => async ( dispatch: any, getState: any ) => {
-    const response = await getContent('/info')
+    const response = await getContent('/info');
+    dispatch(setModalInfo(response.data));
 };
