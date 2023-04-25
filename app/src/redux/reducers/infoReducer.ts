@@ -12,6 +12,8 @@ export default function infoReducer( state: any = defaultState, action: { type: 
             return { ...state, modalOpen: true };
         case infoActionTypes.SET_MODAL_HIDDEN:
             return { ...state, modalOpen: false };
+        case infoActionTypes.SET_MODAL_INFO:
+            return { ...state, modalTitle: action.payload.title, modalDescription: action.payload.description } 
         default:
             return state;
     }
