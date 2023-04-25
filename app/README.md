@@ -21,6 +21,8 @@ Setup:
 * Run the app using 'yarn start'
 
 Steps:
+* Create a new branch with your firstname
+
 * Make the modal appear using the "Open info modal" button
     * This should be done by dispatching an action to change the modalOpen state
 
@@ -28,3 +30,5 @@ Steps:
     * This should be done by dispatching a async action that fetches the info from the api and updates the modalTitle and modalDescription states
 
 * By the end, push your changes with a relevant commit message
+
+* Open a PR with your changes to master
